@@ -80,7 +80,7 @@ const CoursesPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Cybersecurity 101 by ASBK 2999
+              Cybersecurity 101 by ASBK
             </motion.h1>
             <motion.p 
               className="text-xl text-white/80 mb-8"
@@ -118,7 +118,7 @@ const CoursesPage: React.FC = () => {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold mb-6 text-white">Course Overview</h2>
               <p className="text-white/80 mb-6">
-                ASBK 2999 is a comprehensive cybersecurity program designed to take you from the basics 
+                Cybersecurity 101 is a comprehensive cybersecurity program designed to take you from the basics 
                 to advanced pentesting skills in just 30 hours. Whether you're completely new to the field 
                 or looking to enhance your existing knowledge, this course provides the perfect blend of 
                 theory and hands-on practice.

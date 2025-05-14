@@ -20,19 +20,29 @@ const AboutPage: React.FC = () => {
 
   const timelineItems = [
     {
+      year: 2022,
+      title: 'Lead Communities of Google and Microsoft',
+      description: 'Founded a community of tech enthusiasts focusing on cybersecurity education.'
+    },
+    {
       year: 2023,
       title: 'Started Silicon Society',
       description: 'Founded a community of tech enthusiasts focusing on cybersecurity education.'
     },
     {
+      year: 2023,
+      title: 'Delivered Session at Microsoft Office',
+      description: 'Founded a community of tech enthusiasts focusing on cybersecurity education.'
+    },
+    {
       year: 2024,
-      title: 'Gave 20+ workshops across India',
+      title: 'Gave 35+ workshops across India',
       description: 'Conducted hands-on cybersecurity workshops at multiple universities and tech events.'
     },
     {
       year: 2025,
-      title: 'Launched ASBK 2999',
-      description: 'Created a comprehensive cybersecurity course for aspiring security professionals.'
+      title: 'Still training 10000+ Students',
+      description: 'Creating an afffordable cybersecurity course for aspiring security professionals.'
     }
   ];
 
@@ -71,7 +81,7 @@ const AboutPage: React.FC = () => {
               {...fadeIn}
             >
               <h1 className="section-title">
-                Meet Abimel S B Kulumala
+                Meet Abimel
                 <span className="block text-primary mt-2">Educator. Builder. Hacker.</span>
               </h1>
               <p className="text-xl text-white/80 mb-6">
@@ -81,12 +91,12 @@ const AboutPage: React.FC = () => {
               <p className="text-white/70 mb-6">
                 Abimel has trained 10,000+ learners through events, workshops, and courses. 
                 With a foundation in real-world pentesting, he also leads projects in cloud 
-                security, AI, and ethical hacking.
+                security, DevOps AI, and ethical hacking. And Abimel is a linkedin Personal branding Strategist
               </p>
               
               <div className="flex flex-wrap gap-4 mt-8">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/abimelsbk/" 
                   className="btn btn-outline flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -94,7 +104,7 @@ const AboutPage: React.FC = () => {
                   <Linkedin className="h-5 w-5 mr-2" /> LinkedIn
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/abimelsbk" 
                   className="btn btn-outline flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -102,15 +112,15 @@ const AboutPage: React.FC = () => {
                   <Github className="h-5 w-5 mr-2" /> GitHub
                 </a>
                 <a 
-                  href="https://youtube.com" 
+                  href="https://medium.com/@abimelsbkulumala" 
                   className="btn btn-outline flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Youtube className="h-5 w-5 mr-2" /> YouTube
+                  <Youtube className="h-5 w-5 mr-2" /> Medium
                 </a>
                 <a 
-                  href="https://topmate.io" 
+                  href="https://topmate.io/abimelsbkulumala" 
                   className="btn btn-primary flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -159,7 +169,7 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
             >
               <Trophy className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-4xl font-bold text-white mb-2">20+</h3>
+              <h3 className="text-4xl font-bold text-white mb-2">35+</h3>
               <p className="text-white/70">Workshops Conducted</p>
             </motion.div>
           </div>

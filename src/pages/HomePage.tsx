@@ -22,7 +22,8 @@ const HomePage: React.FC = () => {
         <div className="container-custom">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold mb-4 text-white leading-tight">
-              Cybersecurity 101 by ASBK 2999
+              Tapglobe Certified Cybersecurity Proffessional
+              by Tapglobe Academy
             </h1>
             <div className="text-2xl md:text-3xl font-poppins mb-6 text-primary font-semibold">
               <TypeAnimation

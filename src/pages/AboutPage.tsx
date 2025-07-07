@@ -40,15 +40,15 @@ const AboutPage: React.FC = () => {
   return (
     <>
       {/* Header Section */}
-      <section className="pt-32 pb-20 bg-background-dark">
+      <section className="pt-24 pb-16 bg-background-dark">
         <div className="container-custom">
           <motion.div 
-            className="flex flex-col md:flex-row gap-12 items-center"
+            className="flex flex-col md:flex-row gap-8 items-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="md:w-1/3">
+            <div className="md:w-1/3 md:sticky md:top-24">
               <motion.div 
                 className="relative"
                 initial={{ scale: 0.9, opacity: 0 }}
@@ -57,13 +57,13 @@ const AboutPage: React.FC = () => {
               >
                 <div className="rounded-2xl overflow-hidden border-2 border-primary">
                   <img 
-                    src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                    src="/6b387974-ec3a-42a9-9452-1ec6415bd6c1.jpg" 
                     alt="Abimel S B Kulumala"
-                    className="w-full aspect-[3/4] object-cover"
+                    className="w-full aspect-[4/5] object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary rounded-2xl z-[-1]"></div>
-                <div className="absolute -bottom-8 -right-8 w-full h-full border-2 border-primary/50 rounded-2xl z-[-2]"></div>
+                <div className="absolute -bottom-3 -right-3 w-full h-full border-2 border-primary rounded-2xl z-[-1]"></div>
+                <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-primary/50 rounded-2xl z-[-2]"></div>
               </motion.div>
             </div>
             
@@ -71,23 +71,23 @@ const AboutPage: React.FC = () => {
               className="md:w-2/3"
               {...fadeIn}
             >
-              <h1 className="section-title">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                 About the Trainer
                 <span className="block text-primary mt-2">Ranked #38 Among Top 200 Cybersecurity Creators</span>
               </h1>
-              <p className="text-xl text-white/80 mb-6">
+              <p className="text-lg text-white/80 mb-5">
                 You're learning from one of India's rising cybersecurity educators and creators. 
                 Your trainer is ranked #38 among Favikon's Top 200 Cybersecurity Creators, 
                 recognized for delivering impactful content that bridges industry knowledge with student learning.
               </p>
-              <p className="text-white/70 mb-6">
+              <p className="text-white/70 mb-5">
                 You've probably seen his insights on LinkedIn News, where he's been featured for his unique takes 
                 on cybersecurity and emerging threats. His expertise even caught the attention of global tech 
                 giants—he received an inbound cybersecurity job offer from Google.
               </p>
               
-              <div className="bg-background-darker p-6 rounded-lg border border-primary/20 mb-6">
-                <h3 className="text-xl font-bold text-white mb-4">🚀 Mission: Democratize Cybersecurity Education</h3>
+              <div className="bg-background-darker p-5 rounded-lg border border-primary/20 mb-5">
+                <h3 className="text-lg font-bold text-white mb-3">Mission: Democratize Cybersecurity Education</h3>
                 <p className="text-white/80 mb-4">With a mission to democratize cybersecurity education, your trainer has:</p>
                 <ul className="space-y-2 text-white/70">
                   <li className="flex items-start">
@@ -101,18 +101,18 @@ const AboutPage: React.FC = () => {
                 </ul>
               </div>
               
-              <div className="bg-background-darker p-6 rounded-lg border border-primary/20 mb-6">
-                <h3 className="text-xl font-bold text-white mb-4">Founded Two Ventures:</h3>
+              <div className="bg-background-darker p-5 rounded-lg border border-primary/20 mb-5">
+                <h3 className="text-lg font-bold text-white mb-3">Founded Two Ventures:</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
-                    <span className="text-2xl mr-3">🚀</span>
+                    <span className="text-2xl mr-3"></span>
                     <div>
                       <h4 className="font-bold text-primary">Silicon Society</h4>
                       <p className="text-white/70">A vibrant community for tech learners and builders</p>
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <span className="text-2xl mr-3">🧠</span>
+                    <span className="text-2xl mr-3"></span>
                     <div>
                       <h4 className="font-bold text-primary">Tapglobe Solutions</h4>
                       <p className="text-white/70">An innovation lab for security, AI, and education tools</p>
@@ -121,14 +121,14 @@ const AboutPage: React.FC = () => {
                 </div>
               </div>
               
-              <div className="bg-primary/10 p-4 rounded-lg border border-primary/30 mb-6">
+              <div className="bg-primary/10 p-4 rounded-lg border border-primary/30 mb-5">
                 <p className="text-white font-medium italic">
                   "This course isn't just theory. You'll learn from someone who's lived it, built it, 
                   and is actively shaping the future of cybersecurity education."
                 </p>
               </div>
               
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-wrap gap-3 mt-6">
                 <a 
                   href="https://linkedin.com" 
                   className="btn btn-outline flex items-center"

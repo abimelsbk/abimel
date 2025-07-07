@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <Shield className="h-8 w-8 text-primary" />
-              <span className="text-xl font-orbitron font-bold">TapGlobe<span className="text-primary">Academy</span></span>
+              <span className="text-xl font-orbitron font-bold">Abimel<span className="text-primary">SBK</span></span>
             </Link>
             <p className="text-white/70 mb-4">
               Cybersecurity training, mentorship, and career support from fundamentals to elite pentesting.

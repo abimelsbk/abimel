@@ -22,13 +22,12 @@ const HomePage: React.FC = () => {
         <div className="container-custom">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-orbitron font-bold mb-4 text-white leading-tight">
-              Tapglobe Certified Cybersecurity Proffessional
-              by Tapglobe Academy
+              Cybersecurity Essentials Program
             </h1>
             <div className="text-2xl md:text-3xl font-poppins mb-6 text-primary font-semibold">
               <TypeAnimation
                 sequence={[
-                  'From Fundamentals to Elite Pentesting in 30 Hours',
+                  'From Fundamentals to Elite Pentesting in 40 Hours',
                   2000,
                   'Master Ethical Hacking & Penetration Testing',
                   2000,
@@ -125,8 +124,8 @@ const HomePage: React.FC = () => {
                     <Shield className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-white">30 Hours of Cybersecurity Brilliance</h3>
-                    <p className="text-white/70">Comprehensive curriculum covering all essential aspects.</p>
+                    <h3 className="text-xl font-semibold text-white">40 Hours of Cybersecurity Brilliance</h3>
+                    <p className="text-white/70">Comprehensive curriculum with industrial projects and hands-on labs.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -144,7 +143,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-white">Access to Tools, Scripts, Cheatsheets</h3>
-                    <p className="text-white/70">Get resources worth thousands to accelerate your learning.</p>
+                    <p className="text-white/70">Plus weekly 1:1 doubt clearing sessions and dedicated career guidance.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -153,7 +152,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-white">Internships & Job Referrals Available</h3>
-                    <p className="text-white/70">Direct pipeline to industry opportunities for top performers.</p>
+                    <p className="text-white/70">Resume building, LinkedIn optimization, and placement support included.</p>
                   </div>
                 </li>
               </ul>
@@ -167,7 +166,7 @@ const HomePage: React.FC = () => {
             
             <div className="relative">
               <div className="relative z-10 bg-background-darker p-6 md:p-8 rounded-lg border border-white/10 shadow-xl">
-                <h3 className="text-2xl font-orbitron font-bold mb-4 text-primary">ASBK<span className="text-white">2999</span></h3>
+                <h3 className="text-2xl font-orbitron font-bold mb-4 text-primary">Course<span className="text-white"> Details</span></h3>
                 <div className="space-y-4">
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="text-white">Starts</span>
@@ -175,7 +174,7 @@ const HomePage: React.FC = () => {
                   </div>
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="text-white">Duration</span>
-                    <span className="font-semibold text-primary">30 Hours</span>
+                    <span className="font-semibold text-primary">40 Hours</span>
                   </div>
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="text-white">Format</span>
@@ -183,11 +182,24 @@ const HomePage: React.FC = () => {
                   </div>
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="text-white">Certificate</span>
-                    <span className="font-semibold text-primary">Included</span>
+                    <span className="font-semibold text-primary">Certified in Cybersecurity Essentials</span>
                   </div>
                   <div className="flex items-center justify-between border-b border-white/10 pb-2">
                     <span className="text-white">Modules</span>
-                    <span className="font-semibold text-primary">9 Modules</span>
+                    <span className="font-semibold text-primary">12 Modules</span>
+                  </div>
+                  <div className="flex items-center justify-between border-b border-white/10 pb-2">
+                    <span className="text-white">Original Price</span>
+                    <span className="font-semibold text-white line-through">₹16,000</span>
+                  </div>
+                  <div className="flex items-center justify-between border-b border-white/10 pb-2">
+                    <span className="text-white">Offer Price</span>
+                    <span className="font-semibold text-primary text-xl">₹3,999</span>
+                  </div>
+                  <div className="text-center">
+                    <span className="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
+                      Limited Time: Next 10 Days Only!
+                    </span>
                   </div>
                 </div>
                 <div className="mt-6">
@@ -208,12 +220,23 @@ const HomePage: React.FC = () => {
       {/* Testimonials */}
       <section className="py-20 bg-background-darker">
         <div className="container-custom">
-          <h2 className="section-title text-center">Student Testimonials</h2>
+          <h2 className="section-title text-center">What Students Say</h2>
           <p className="section-subtitle text-center mx-auto">
-            See what our students have to say about their learning experience.
+            Real reviews from students who have transformed their careers through our mentorship and courses.
           </p>
           
           <TestimonialCarousel />
+          
+          <div className="text-center mt-12">
+            <a 
+              href="https://topmate.io/abimelsbkulumala" 
+              className="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View All Reviews on Topmate
+            </a>
+          </div>
         </div>
       </section>
 

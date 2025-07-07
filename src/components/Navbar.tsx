@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             onClick={closeMenu}
           >
             <Shield className="h-8 w-8 text-primary" />
-            <span className="text-xl font-orbitron font-bold">TapGlobe<span className="text-primary">Academy</span></span>
+            <span className="text-xl font-orbitron font-bold">Abimel<span className="text-primary">SBK</span></span>
           </Link>
 
           {/* Desktop navigation */}

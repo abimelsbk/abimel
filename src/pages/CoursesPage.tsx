@@ -13,57 +13,75 @@ interface Module {
 const modules: Module[] = [
   {
     id: 1,
-    title: 'Introduction to Cybersecurity',
+    title: 'Introduction to Cybersecurity & Career Paths',
     duration: '3 hrs',
-    description: 'Foundation concepts, security principles, and the cybersecurity landscape.'
+    description: 'Foundation concepts, security principles, cybersecurity landscape, and career opportunities.'
   },
   {
     id: 2,
-    title: 'Networking & Protocols',
+    title: 'Networking Fundamentals for Cybersecurity',
     duration: '3 hrs',
-    description: 'Understanding TCP/IP, network infrastructure, and common protocols.'
+    description: 'TCP/IP, network infrastructure, protocols, and network security fundamentals.'
   },
   {
     id: 3,
-    title: 'Linux for Hackers',
+    title: 'Operating Systems: Windows & Linux for Security',
     duration: '3 hrs',
-    description: 'Essential Linux commands, scripting, and system administration.'
+    description: 'Windows and Linux security, essential commands, scripting, and system administration.'
   },
   {
     id: 4,
-    title: 'Information Gathering',
+    title: 'Threat Landscape & Attack Vectors',
     duration: '4 hrs',
-    description: 'Reconnaissance techniques, OSINT, and target profiling methods.'
+    description: 'Current threat landscape, attack vectors, and reconnaissance techniques including OSINT.'
   },
   {
     id: 5,
-    title: 'Web App Attacks',
+    title: 'Web & Application Security',
     duration: '5 hrs',
-    description: 'Vulnerabilities, exploitation, and security testing of web applications.'
+    description: 'Web application vulnerabilities, exploitation techniques, and security testing methodologies.'
   },
   {
     id: 6,
-    title: 'WiFi Attacks & Tools',
+    title: 'Cryptography & Secure Communications',
     duration: '4 hrs',
-    description: 'Wireless network security, attack vectors, and defense strategies.'
+    description: 'Cryptographic principles, encryption methods, and secure communication protocols.'
   },
   {
     id: 7,
-    title: 'Social Engineering',
-    duration: '2 hrs',
-    description: 'Human exploitation techniques, phishing, and psychological manipulation.'
+    title: 'Security Operations & Monitoring',
+    duration: '4 hrs',
+    description: 'SOC operations, SIEM tools, incident response, and security monitoring techniques.'
   },
   {
     id: 8,
-    title: 'Advanced Exploitation',
+    title: 'Cloud Security Fundamentals',
     duration: '3 hrs',
-    description: 'Complex attack chains, privilege escalation, and post-exploitation.'
+    description: 'Cloud security concepts, AWS/Azure security, and cloud-specific vulnerabilities.'
   },
   {
     id: 9,
-    title: 'Reporting & Certification Prep',
-    duration: '2 hrs',
-    description: 'Professional documentation, findings presentation, and exam preparation.'
+    title: 'Ethical Hacking & Pentesting Fundamentals',
+    duration: '5 hrs',
+    description: 'Penetration testing methodologies, tools, and ethical hacking techniques.'
+  },
+  {
+    id: 10,
+    title: 'Governance, Risk & Compliance (GRC)',
+    duration: '3 hrs',
+    description: 'Security frameworks, compliance requirements, risk management, and governance.'
+  },
+  {
+    id: 11,
+    title: 'Emerging Technology Security (AI, LLMs, Hardware, IoT)',
+    duration: '4 hrs',
+    description: 'Security challenges in AI/ML, IoT devices, hardware security, and emerging technologies.'
+  },
+  {
+    id: 12,
+    title: 'Cyber Hygiene & Online Anonymity',
+    duration: '3 hrs',
+    description: 'Personal security practices, privacy protection, and maintaining online anonymity.'
   }
 ];
 
@@ -80,7 +98,7 @@ const CoursesPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Cybersecurity 101 by ASBK
+              Cybersecurity Essentials Program
             </motion.h1>
             <motion.p 
               className="text-xl text-white/80 mb-8"
@@ -88,7 +106,7 @@ const CoursesPage: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              From Fundamentals to Elite Pentesting in 30 Hours
+              From Fundamentals to Elite Pentesting in 40 Hours
             </motion.p>
             
             <motion.div 
@@ -118,8 +136,8 @@ const CoursesPage: React.FC = () => {
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold mb-6 text-white">Course Overview</h2>
               <p className="text-white/80 mb-6">
-                Cybersecurity 101 is a comprehensive cybersecurity program designed to take you from the basics 
-                to advanced pentesting skills in just 30 hours. Whether you're completely new to the field 
+                The Cybersecurity Essentials Program is a comprehensive cybersecurity course designed to take you from the basics 
+                to advanced pentesting skills in just 40 hours. Whether you're completely new to the field 
                 or looking to enhance your existing knowledge, this course provides the perfect blend of 
                 theory and hands-on practice.
               </p>
@@ -128,6 +146,42 @@ const CoursesPage: React.FC = () => {
                 simulate actual security threats. By the end of the course, you'll have the skills to 
                 identify vulnerabilities, execute ethical hacks, and implement robust security measures.
               </p>
+              
+              <h3 className="text-2xl font-bold mt-8 mb-4 text-white">What Makes This Course Special</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 40 Hours of Course Content</h4>
+                  <p className="text-white/70 text-sm">Comprehensive curriculum with industrial projects</p>
+                </div>
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 Weekly 1-to-1 Doubt Clearing</h4>
+                  <p className="text-white/70 text-sm">Personal sessions to address your specific questions</p>
+                </div>
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 Resume Building Session</h4>
+                  <p className="text-white/70 text-sm">Dedicated session to craft your cybersecurity resume</p>
+                </div>
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 LinkedIn Profile Building</h4>
+                  <p className="text-white/70 text-sm">Optimize your LinkedIn for cybersecurity opportunities</p>
+                </div>
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 Placement Support</h4>
+                  <p className="text-white/70 text-sm">No guarantee, but support with latest job opportunities in VAPT and SOC domains</p>
+                </div>
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 Freelancing Career Guide</h4>
+                  <p className="text-white/70 text-sm">Dedicated session on starting a freelancing career in cybersecurity</p>
+                </div>
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 Bug Bounty Journey</h4>
+                  <p className="text-white/70 text-sm">Learn how to start your bug bounty hunting career</p>
+                </div>
+                <div className="bg-background-dark p-4 rounded-lg border border-white/10">
+                  <h4 className="font-bold text-primary mb-2">🔹 CTF Participation Guide</h4>
+                  <p className="text-white/70 text-sm">Get started with Capture The Flag competitions</p>
+                </div>
+              </div>
               
               <h3 className="text-2xl font-bold mt-8 mb-4 text-white">What You'll Learn</h3>
               <ul className="space-y-3 text-white/80">
@@ -174,21 +228,38 @@ const CoursesPage: React.FC = () => {
                       <Clock className="h-5 w-5 text-primary mr-3" />
                       <span className="text-white">Duration</span>
                     </div>
-                    <span className="text-primary font-medium">30 Hours</span>
+                    <span className="text-primary font-medium">40 Hours</span>
                   </div>
                   <div className="flex items-center justify-between pb-4 border-b border-white/10">
                     <div className="flex items-center">
                       <Terminal className="h-5 w-5 text-primary mr-3" />
                       <span className="text-white">Modules</span>
                     </div>
-                    <span className="text-primary font-medium">9 Modules</span>
+                    <span className="text-primary font-medium">12 Modules</span>
                   </div>
                   <div className="flex items-center justify-between pb-4 border-b border-white/10">
                     <div className="flex items-center">
                       <Shield className="h-5 w-5 text-primary mr-3" />
                       <span className="text-white">Includes</span>
                     </div>
-                    <span className="text-primary font-medium">Certificate</span>
+                    <span className="text-primary font-medium">Certified in Cybersecurity Essentials</span>
+                  </div>
+                  <div className="flex items-center justify-between pb-4 border-b border-white/10">
+                    <div className="flex items-center">
+                      <span className="text-white">Original Price</span>
+                    </div>
+                    <span className="text-white line-through">₹16,000</span>
+                  </div>
+                  <div className="flex items-center justify-between pb-4 border-b border-white/10">
+                    <div className="flex items-center">
+                      <span className="text-white">Offer Price</span>
+                    </div>
+                    <span className="text-primary font-bold text-xl">₹3,999</span>
+                  </div>
+                  <div className="text-center mb-4">
+                    <span className="inline-block px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-medium">
+                      Limited Time: Next 10 Days Only!
+                    </span>
                   </div>
                 </div>
                 
@@ -254,13 +325,145 @@ const CoursesPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Tools Section */}
+      <section className="py-20 bg-background-dark text-white">
+        <div className="container-custom">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-black">
+            Tools we cover in this course
+          </h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {/* Row 1 */}
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-black">KALI LINUX</h3>
+                <p className="text-gray-600 text-sm">Penetration Testing OS</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-blue-600">Nessus</h3>
+                <p className="text-gray-600 text-sm">Vulnerability Scanner</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-black">WIRESHARK</h3>
+                <p className="text-gray-600 text-sm">Network Protocol Analyzer</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-blue-500">NMAP</h3>
+                <p className="text-gray-600 text-sm">Network Discovery Tool</p>
+              </div>
+            </motion.div>
+            
+            {/* Row 2 */}
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-orange-600">BurpSuite</h3>
+                <p className="text-gray-600 text-sm">Web App Security Testing</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-blue-700">Metasploit</h3>
+                <p className="text-gray-600 text-sm">Exploitation Framework</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-blue-600">EXPLOIT DATABASE</h3>
+                <p className="text-gray-600 text-sm">Vulnerability Database</p>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="bg-white rounded-lg p-6 flex items-center justify-center h-32 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-bold text-gray-800">AIRCRACK-NG</h3>
+                <p className="text-gray-600 text-sm">WiFi Security Auditing</p>
+              </div>
+            </motion.div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-black text-lg font-medium">
+              And many more industry-standard tools and frameworks!
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-cyber-gradient">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Begin Your Cybersecurity Journey?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Master Cybersecurity Essentials?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join our comprehensive course and gain the skills needed to excel in the cybersecurity industry.
+            Join our comprehensive 40-hour program with industrial projects, 1:1 mentorship, and career support.
           </p>
+          <div className="mb-6">
+            <div className="inline-block bg-white/10 rounded-lg p-4 mb-4">
+              <div className="flex items-center justify-center gap-4 text-white">
+                <span className="text-2xl line-through opacity-60">₹16,000</span>
+                <span className="text-4xl font-bold text-primary">₹3,999</span>
+              </div>
+              <p className="text-white/90 mt-2">Limited Time Offer - Next 10 Days Only!</p>
+            </div>
+          </div>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="#" className="btn bg-white text-primary hover:bg-gray-100">
               <Terminal className="h-5 w-5 mr-2" /> Enroll Now

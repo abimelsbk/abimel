@@ -20,29 +20,20 @@ const AboutPage: React.FC = () => {
 
   const timelineItems = [
     {
-      year: 2022,
-      title: 'Lead Communities of Google and Microsoft',
-      description: 'Founded a community of tech enthusiasts focusing on cybersecurity education.'
-    },
-    {
       year: 2023,
       title: 'Started Silicon Society',
       description: 'Founded a community of tech enthusiasts focusing on cybersecurity education.'
     },
     {
-      year: 2023,
-      title: 'Delivered Session at Microsoft Office',
-      description: 'Founded a community of tech enthusiasts focusing on cybersecurity education.'
-    },
-    {
       year: 2024,
-      title: 'Gave 35+ workshops across India',
+      title: 'Gave 20+ workshops across India',
       description: 'Conducted hands-on cybersecurity workshops at multiple universities and tech events.'
     },
     {
       year: 2025,
-      title: 'Still training 10000+ Students',
-      description: 'Creating an afffordable cybersecurity course for aspiring security professionals.'
+      title: 'Launched ASBK 2999',
+      title: 'Launched Cybersecurity Essentials Program',
+      description: 'Created a comprehensive 40-hour cybersecurity course for aspiring security professionals.'
     }
   ];
 
@@ -81,7 +72,7 @@ const AboutPage: React.FC = () => {
               {...fadeIn}
             >
               <h1 className="section-title">
-                Meet Abimel
+                Meet Abimel S B Kulumala
                 <span className="block text-primary mt-2">Educator. Builder. Hacker.</span>
               </h1>
               <p className="text-xl text-white/80 mb-6">
@@ -91,12 +82,12 @@ const AboutPage: React.FC = () => {
               <p className="text-white/70 mb-6">
                 Abimel has trained 10,000+ learners through events, workshops, and courses. 
                 With a foundation in real-world pentesting, he also leads projects in cloud 
-                security, DevOps AI, and ethical hacking. And Abimel is a linkedin Personal branding Strategist
+                security, AI, and ethical hacking.
               </p>
               
               <div className="flex flex-wrap gap-4 mt-8">
                 <a 
-                  href="https://www.linkedin.com/in/abimelsbk/" 
+                  href="https://linkedin.com" 
                   className="btn btn-outline flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -104,7 +95,7 @@ const AboutPage: React.FC = () => {
                   <Linkedin className="h-5 w-5 mr-2" /> LinkedIn
                 </a>
                 <a 
-                  href="https://github.com/abimelsbk" 
+                  href="https://github.com" 
                   className="btn btn-outline flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -112,15 +103,15 @@ const AboutPage: React.FC = () => {
                   <Github className="h-5 w-5 mr-2" /> GitHub
                 </a>
                 <a 
-                  href="https://medium.com/@abimelsbkulumala" 
+                  href="https://youtube.com" 
                   className="btn btn-outline flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Youtube className="h-5 w-5 mr-2" /> Medium
+                  <Youtube className="h-5 w-5 mr-2" /> YouTube
                 </a>
                 <a 
-                  href="https://topmate.io/abimelsbkulumala" 
+                  href="https://topmate.io" 
                   className="btn btn-primary flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -136,6 +127,7 @@ const AboutPage: React.FC = () => {
       {/* Stats Section */}
       <section className="py-16 bg-background-darker">
         <div className="container-custom">
+          <h2 className="section-title text-center mb-12">Impact & Recognition</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div 
               className="card text-center"
@@ -169,8 +161,38 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
             >
               <Trophy className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-4xl font-bold text-white mb-2">35+</h3>
+              <h3 className="text-4xl font-bold text-white mb-2">20+</h3>
               <p className="text-white/70">Workshops Conducted</p>
+            </motion.div>
+          </div>
+          
+          {/* Reviews Summary */}
+          <div className="mt-16 text-center">
+            <motion.div 
+              className="card max-w-2xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-bold text-white mb-4">Trusted by Students Worldwide</h3>
+              <div className="flex items-center justify-center mb-4">
+                <div className="flex text-yellow-400 text-2xl mr-3">
+                  ★★★★★
+                </div>
+                <span className="text-white text-xl font-semibold">5.0/5</span>
+              </div>
+              <p className="text-white/70 mb-6">
+                Based on 50+ reviews from students who have taken our courses and mentorship sessions.
+              </p>
+              <a 
+                href="https://topmate.io/abimelsbkulumala" 
+                className="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read All Reviews
+              </a>
             </motion.div>
           </div>
         </div>

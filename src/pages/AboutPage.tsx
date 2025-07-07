@@ -57,7 +57,7 @@ const AboutPage: React.FC = () => {
               >
                 <div className="rounded-2xl overflow-hidden border-2 border-primary">
                   <img 
-                    src="/6b387974-ec3a-42a9-9452-1ec6415bd6c1.jpg" 
+                    src="/Abimel_S_B_kulumala.jpg" 
                     alt="Abimel S B Kulumala"
                     className="w-full aspect-[4/5] object-cover"
                   />

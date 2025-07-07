@@ -256,7 +256,7 @@ const HomePage: React.FC = () => {
             Join thousands of students who have transformed their careers with our expert-led training.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/courses" className="btn bg-white text-primary hover:bg-gray-100">
+            <Link to="https://forms.office.com/r/utbeMu8Wqm" className="btn bg-white text-primary hover:bg-gray-100">
               <TerminalSquare className="h-5 w-5 mr-2" /> Enroll Now
             </Link>
             <Link to="/contact" className="btn btn-outline border-white text-white hover:bg-white/10">

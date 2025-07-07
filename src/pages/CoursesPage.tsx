@@ -264,7 +264,7 @@ const CoursesPage: React.FC = () => {
                 </div>
                 
                 <div className="mt-8">
-                  <a href="#" className="btn btn-primary w-full justify-center">
+                  <a href="https://forms.office.com/r/utbeMu8Wqm" className="btn btn-primary w-full justify-center">
                     Enroll Now
                   </a>
                   <a href="#" className="btn btn-outline w-full justify-center mt-3">
@@ -468,7 +468,7 @@ const CoursesPage: React.FC = () => {
             <a href="#" className="btn bg-white text-primary hover:bg-gray-100">
               <Terminal className="h-5 w-5 mr-2" /> Enroll Now
             </a>
-            <Link to="/contact" className="btn btn-outline border-white text-white hover:bg-white/10">
+            <Link to="https://forms.office.com/r/utbeMu8Wqm" className="btn btn-outline border-white text-white hover:bg-white/10">
               Have Questions?
             </Link>
           </div>

@@ -7,34 +7,80 @@ interface Testimonial {
   role: string;
   content: string;
   avatar: string;
+  rating: number;
+  date: string;
 }
 
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Devika T.',
-    role: 'Final Year BTech',
-    content: 'ASBK made cybersecurity click for me! The labs were amazing and provided real-world experience. I can now confidently apply for security roles knowing I have practical skills.',
-    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    name: 'Arjun Krishnan',
+    role: 'Software Engineer',
+    content: 'Abimel\'s mentorship was game-changing! His practical approach to cybersecurity helped me transition from development to security. The 1:1 sessions were incredibly valuable for clearing doubts and getting career guidance.',
+    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    rating: 5,
+    date: 'March 2025'
   },
   {
     id: 2,
-    name: 'Joel K.',
-    role: 'Fresh Graduate',
-    content: 'From zero to internship-ready in 6 weeks! The course structure is perfect for beginners, and the mentorship sessions helped me navigate my career path.',
-    avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    name: 'Priya Sharma',
+    role: 'Cybersecurity Analyst',
+    content: 'Excellent mentor! Abimel helped me understand complex penetration testing concepts with real-world examples. His teaching style is very engaging and he always makes time to answer questions thoroughly.',
+    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    rating: 5,
+    date: 'February 2025'
   },
   {
     id: 3,
-    name: 'Sanjana R.',
-    role: 'Security Analyst',
-    content: 'The advanced modules on Web App Attacks completely transformed my approach to security testing. Abimel\'s teaching style makes complex concepts easy to grasp.',
-    avatar: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+    name: 'Rahul Verma',
+    role: 'IT Student',
+    content: 'Amazing session on ethical hacking! Abimel explained everything from basics to advanced techniques. His practical demonstrations made learning so much easier. Highly recommend for anyone starting in cybersecurity.',
+    avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    rating: 5,
+    date: 'January 2025'
+  },
+  {
+    id: 4,
+    name: 'Sneha Patel',
+    role: 'Security Consultant',
+    content: 'Great mentor with deep industry knowledge. Abimel helped me prepare for my CISSP certification and provided valuable insights about the cybersecurity industry. His guidance was instrumental in my career growth.',
+    avatar: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    rating: 5,
+    date: 'December 2024'
+  },
+  {
+    id: 5,
+    name: 'Vikram Singh',
+    role: 'Network Administrator',
+    content: 'Fantastic session on network security! Abimel\'s expertise in penetration testing is evident. He provided practical tips that I could immediately apply in my work. Looking forward to more sessions.',
+    avatar: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    rating: 5,
+    date: 'November 2024'
+  },
+  {
+    id: 6,
+    name: 'Ananya Reddy',
+    role: 'Fresh Graduate',
+    content: 'Abimel is an excellent teacher! His cybersecurity course content is comprehensive and up-to-date. The hands-on labs and real-world scenarios helped me understand concepts better than any textbook.',
+    avatar: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    rating: 5,
+    date: 'October 2024'
   }
 ];
 
 const TestimonialCarousel: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const renderStars = (rating: number) => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <span
+        key={index}
+        className={`text-lg ${index < rating ? 'text-yellow-400' : 'text-gray-400'}`}
+      >
+        ★
+      </span>
+    ));
+  };
 
   const nextSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -70,6 +116,10 @@ const TestimonialCarousel: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-bold text-white">{testimonial.name}</h3>
                     <p className="text-primary">{testimonial.role}</p>
+                    <div className="flex items-center mt-1">
+                      {renderStars(testimonial.rating)}
+                      <span className="text-white/50 text-sm ml-2">{testimonial.date}</span>
+                    </div>
                   </div>
                 </div>
                 <div className="relative">

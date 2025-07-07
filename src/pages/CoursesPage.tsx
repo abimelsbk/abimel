@@ -326,7 +326,7 @@ const CoursesPage: React.FC = () => {
       </section>
 
       {/* Tools Section */}
-      <section className="py-20 bg-background-dark text-white">
+      <section className="py-20 bg-cyber-gradient text-white">
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-black">
             Tools we cover in this course
@@ -449,7 +449,7 @@ const CoursesPage: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-cyber-gradient">
+      <section className="py-20 bg-background-dark">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Master Cybersecurity Essentials?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">

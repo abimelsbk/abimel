@@ -21,19 +21,19 @@ const AboutPage: React.FC = () => {
   const timelineItems = [
     {
       year: 2023,
-      title: 'Started Silicon Society',
-      description: 'Founded a community of tech enthusiasts focusing on cybersecurity education.'
+      title: 'Founded Silicon Society',
+      description: 'Created a vibrant community for tech learners and builders, focusing on cybersecurity education and skill development.'
     },
     {
       year: 2024,
-      title: 'Gave 20+ workshops across India',
-      description: 'Conducted hands-on cybersecurity workshops at multiple universities and tech events.'
+      title: 'Ranked #38 Top Cybersecurity Creator',
+      description: 'Recognized by Favikon among Top 200 Cybersecurity Creators for impactful educational content.'
     },
     {
       year: 2025,
       title: 'Launched ASBK 2999',
-      title: 'Launched Cybersecurity Essentials Program',
-      description: 'Created a comprehensive 40-hour cybersecurity course for aspiring security professionals.'
+      title: 'Launched Cybersecurity Essentials Program & Tapglobe Solutions',
+      description: 'Created comprehensive 40-hour cybersecurity course and founded innovation lab for security, AI, and education tools.'
     }
   ];
 
@@ -72,18 +72,61 @@ const AboutPage: React.FC = () => {
               {...fadeIn}
             >
               <h1 className="section-title">
-                Meet Abimel S B Kulumala
-                <span className="block text-primary mt-2">Educator. Builder. Hacker.</span>
+                About the Trainer
+                <span className="block text-primary mt-2">Ranked #38 Among Top 200 Cybersecurity Creators</span>
               </h1>
               <p className="text-xl text-white/80 mb-6">
-                Cybersecurity researcher, community leader, and educator with a passion for 
-                helping students transition into skilled professionals.
+                You're learning from one of India's rising cybersecurity educators and creators. 
+                Your trainer is ranked #38 among Favikon's Top 200 Cybersecurity Creators, 
+                recognized for delivering impactful content that bridges industry knowledge with student learning.
               </p>
               <p className="text-white/70 mb-6">
-                Abimel has trained 10,000+ learners through events, workshops, and courses. 
-                With a foundation in real-world pentesting, he also leads projects in cloud 
-                security, AI, and ethical hacking.
+                You've probably seen his insights on LinkedIn News, where he's been featured for his unique takes 
+                on cybersecurity and emerging threats. His expertise even caught the attention of global tech 
+                giants—he received an inbound cybersecurity job offer from Google.
               </p>
+              
+              <div className="bg-background-darker p-6 rounded-lg border border-primary/20 mb-6">
+                <h3 className="text-xl font-bold text-white mb-4">🚀 Mission: Democratize Cybersecurity Education</h3>
+                <p className="text-white/80 mb-4">With a mission to democratize cybersecurity education, your trainer has:</p>
+                <ul className="space-y-2 text-white/70">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Taught over 10,000 students through workshops, sessions, and hands-on bootcamps</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>Personally mentored more than 400 students, helping them crack internships, jobs, and research opportunities</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-background-darker p-6 rounded-lg border border-primary/20 mb-6">
+                <h3 className="text-xl font-bold text-white mb-4">Founded Two Ventures:</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="text-2xl mr-3">🚀</span>
+                    <div>
+                      <h4 className="font-bold text-primary">Silicon Society</h4>
+                      <p className="text-white/70">A vibrant community for tech learners and builders</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="text-2xl mr-3">🧠</span>
+                    <div>
+                      <h4 className="font-bold text-primary">Tapglobe Solutions</h4>
+                      <p className="text-white/70">An innovation lab for security, AI, and education tools</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-primary/10 p-4 rounded-lg border border-primary/30 mb-6">
+                <p className="text-white font-medium italic">
+                  "This course isn't just theory. You'll learn from someone who's lived it, built it, 
+                  and is actively shaping the future of cybersecurity education."
+                </p>
+              </div>
               
               <div className="flex flex-wrap gap-4 mt-8">
                 <a 
@@ -127,7 +170,7 @@ const AboutPage: React.FC = () => {
       {/* Stats Section */}
       <section className="py-16 bg-background-darker">
         <div className="container-custom">
-          <h2 className="section-title text-center mb-12">Impact & Recognition</h2>
+          <h2 className="section-title text-center mb-12">Recognition & Impact</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div 
               className="card text-center"
@@ -136,9 +179,9 @@ const AboutPage: React.FC = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-4xl font-bold text-white mb-2">3+</h3>
-              <p className="text-white/70">Years in Cybersecurity</p>
+              <div className="text-4xl mb-4">🏆</div>
+              <h3 className="text-4xl font-bold text-white mb-2">#38</h3>
+              <p className="text-white/70">Favikon's Top 200 Cybersecurity Creators</p>
             </motion.div>
             
             <motion.div 
@@ -149,7 +192,7 @@ const AboutPage: React.FC = () => {
               viewport={{ once: true }}
             >
               <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-4xl font-bold text-white mb-2">10,000+</h3>
+              <h3 className="text-4xl font-bold text-white mb-2">10K+</h3>
               <p className="text-white/70">Students Trained</p>
             </motion.div>
             
@@ -160,9 +203,36 @@ const AboutPage: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <Trophy className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-4xl font-bold text-white mb-2">20+</h3>
-              <p className="text-white/70">Workshops Conducted</p>
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-4xl font-bold text-white mb-2">400+</h3>
+              <p className="text-white/70">Students Personally Mentored</p>
+            </motion.div>
+          </div>
+          
+          {/* Additional Recognition */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div 
+              className="card text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-4xl mb-4">📰</div>
+              <h3 className="text-xl font-bold text-white mb-2">Featured on LinkedIn News</h3>
+              <p className="text-white/70">Recognized for unique insights on cybersecurity and emerging threats</p>
+            </motion.div>
+            
+            <motion.div 
+              className="card text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-4xl mb-4">🌟</div>
+              <h3 className="text-xl font-bold text-white mb-2">Google Job Offer</h3>
+              <p className="text-white/70">Received inbound cybersecurity job offer from Google</p>
             </motion.div>
           </div>
           
